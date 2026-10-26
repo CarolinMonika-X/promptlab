@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-10-26T23:30:25",
+  "model": "Demo mode",
+  "mode": "Demo",
+  "original_prompt": "You are a careful subject-matter expert. Complete the task below accurately and transparently.\n\nTask: Explain machine learning.\nObjective: Explain machine learning\nAudience: the intended audience\n\nRequirements:\n- Preserve the user's intent and do not invent missing facts.\n- State important assumptions briefly before answering.\n- Use clear headings and concise, easy-to-scan language.\n- Include all requested elements and label uncertainty where relevant.\n\nOutput format:\n1. Direct answer\n2. Supporting explanation or examples\n3. Short limitations or next steps",
+  "optimized_prompt": "You are a careful subject-matter expert. Complete the task below accurately and transparently.\n\nTask: You are a careful subject-matter expert. Complete the task below accurately and transparently.\n\nTask: Explain machine learning.\nObjective: Explain machine learning\nAudience: the intended audience\n\nRequirements:\n- Preserve the user's intent and do not invent missing facts.\n- State important assumptions briefly before answering.\n- Use clear headings and concise, easy-to-scan language.\n- Include all requested elements and label uncertainty where relevant.\n\nOutput format:\n1. Direct answer\n2. Supporting explanation or examples\n3. Short limitations or next steps\nObjective: A beginner-friendly explanation with examples\nAudience: First-year computer science students\n\nRequirements:\n- Preserve the user's intent and do not invent missing facts.\n- State important assumptions briefly before answering.\n- Use clear headings and concise, easy-to-scan language.\n- Include all requested elements and label uncertainty where relevant.\n\nOutput format:\n1. Direct answer\n2. Supporting explanation or examples\n3. Short limitations or next steps",
+  "original_response": "## Response\n\nThis is a local demonstration response for the task: **You are a careful subject-matter expert. Complete the task below accurately and transparently.\n\nTask: Explain machine learning.\nObjective: Explain machine learning\nAudience: the in**\n\n- The task has been interpreted using the supplied objective.\n- Add a Gemini API key in `.env` to generate a model response.\n\n### Assumptions\nThis demo uses deterministic placeholder content, so its score is illustrative rather than an LLM result.",
+  "optimized_response": "## Response\n\nThis is a local demonstration response for the task: **You are a careful subject-matter expert. Complete the task below accurately and transparently.\n\nTask: You are a careful subject-matter expert. Complete the task below accurately an**\n\n- The task has been interpreted using the supplied objective.\n- Add a Gemini API key in `.env` to generate a model response.\n\n### Assumptions\nThis demo uses deterministic placeholder content, so its score is illustrative rather than an LLM result.",
+  "original_evaluation": {
+    "scores": {
+      "Relevance": 5,
+      "Completeness": 4,
+      "Instruction compliance": 5,
+      "Output format compliance": 5,
+      "Factual support": 4
+    },
+    "notes": {
+      "Relevance": "Measures whether a substantive answer was returned for the requested task.",
+      "Completeness": "Estimated from response coverage and length; review manually for important omissions.",
+      "Instruction compliance": "Checks for explicit structure and signs of refusal, not semantic correctness.",
+      "Output format compliance": "Checks for headings/lists when the prompt requests a structured answer.",
+      "Factual support": "A heuristic estimate; this is not a substitute for fact-checking."
+    },
+    "total": 23,
+    "percentage": 92.0
+  },
+  "optimized_evaluation": {
+    "scores": {
+      "Relevance": 5,
+      "Completeness": 4,
+      "Instruction compliance": 5,
+      "Output format compliance": 5,
+      "Factual support": 4
+    },
+    "notes": {
+      "Relevance": "Measures whether a substantive answer was returned for the requested task.",
+      "Completeness": "Estimated from response coverage and length; review manually for important omissions.",
+      "Instruction compliance": "Checks for explicit structure and signs of refusal, not semantic correctness.",
+      "Output format compliance": "Checks for headings/lists when the prompt requests a structured answer.",
+      "Factual support": "A heuristic estimate; this is not a substitute for fact-checking."
+    },
+    "total": 23,
+    "percentage": 92.0
+  },
+  "analysis": {
+    "objective": "A beginner-friendly explanation with examples",
+    "strengths": [
+      "The prompt gives the model enough initial context to begin the task.",
+      "A recognizable task verb is present.",
+      "An expected outcome was supplied.",
+      "The target audience is specified.",
+      "The output structure is at least partially specified."
+    ],
+    "weaknesses": [],
+    "recommendations": [
+      "Test the prompt against representative tasks and review the result."
+    ],
+    "detected_techniques": [
+      "Zero-shot prompting",
+      "Context injection",
+      "Structured output prompting",
+      "Few-shot prompting",
+      "Role-based prompting"
+    ]
+  }
+}
